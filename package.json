@@ -1,0 +1,12 @@
+{
+  "name": "mt5-auto-trader",
+  "version": "1.0.0",
+  "description": "MetaTrader 5 Auto Trader",
+  "main": "trade.js",
+  "scripts": {
+    "start": "node trade.js"
+  },
+  "dependencies": {
+    "puppeteer": "^19.0.0"
+  }
+}
