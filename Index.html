@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetaTrader 5 Auto Trader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>MetaTrader 5 Auto Trader</h2>
+  <form id="login-form">
+    <label for="login">MT5 Login:</label>
+    <input type="text" id="login" name="login" placeholder="Enter your MT5 login" required>
+    
+    <label for="password">MT5 Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your MT5 password" required>
+    
+    <label for="symbol">Trading Symbol:</label>
+    <input type="text" id="symbol" name="symbol" placeholder="e.g., EURUSD" required>
+    
+    <label for="lotSize">Lot Size:</label>
+    <input type="number" id="lotSize" name="lotSize" placeholder="Enter lot size" required>
+    
+    <label for="stopLoss">Stop Loss (pips):</label>
+    <input type="number" id="stopLoss" name="stopLoss" placeholder="Enter Stop Loss" required>
+    
+    <label for="takeProfit">Take Profit (pips):</label>
+    <input type="number" id="takeProfit" name="takeProfit" placeholder="Enter Take Profit" required>
+    
+    <button type="submit">Start Trading</button>
+  </form>
+
+  <script src="trade.js"></script>
+</body>
+</html>
